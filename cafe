@@ -65,15 +65,15 @@
       {
         interval: 7,
         offset: 0,
-        msg: "Mantenha-se sempre votando, se não será removido da lista de espera e da cabine de DJ."
+        msg: "/em: Mantenha-se sempre votando, se não será removido da lista de espera e da cabine de DJ."
       },{
         interval: 5,
         offset: 0,
-        msg: "Make sure that you're voting or you will be removed from the wait list and from the DJ Booth."
+        msg: "/em: Make sure that you're voting or you will be removed from the wait list and from the DJ Booth."
       },{
         interval: 9,
         offset: 0,
-        msg: "Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/EDTplugdj/"
+        msg: "/em: Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/EDTplugdj/"
       }
     ];
 
@@ -996,7 +996,7 @@
     };
 
     statusCommand.prototype.functionality = function() {
-      var day, hour, launch, lt, meridian, min, month, msg, t, totals;
+      var day, hour, launch, lt, meridian, min, month, msg, t;
       lt = data.launchTime;
       month = lt.getMonth() + 1;
       day = lt.getDate();
@@ -1007,8 +1007,7 @@
       t = data.totalVotingData;
       t['songs'] = data.songCount;
       launch = 'Iniciado em ' + day + '/' + month + ' ' + hour + ':' + min + ' ' + meridian + '. ';
-	  totals = ' Tocou ' + t.songs + ' músicas '
-      msg = launch + totals;
+      msg = launch;
       return API.sendChat(msg);
     };
 
@@ -1081,7 +1080,7 @@
 
     reloadCommand.prototype.functionality = function() {
       var pupSrc;
-      API.sendChat('Reiniciado...');
+      API.sendChat('Reiniciado!');
       undoHooks();
       pupSrc = data.pupScriptUrl;
       data.implode();
@@ -1297,7 +1296,7 @@
     swapCommand.prototype.functionality = function() {
       var msg, r, swapRegex, userAdd, userRemove, users;
       msg = this.msgData.message;
-      swapRegex = new RegExp("^!swap @(.+) por @(.+)$");
+      swapRegex = new RegExp("^!swap @(.+) para @(.+)$");
       users = swapRegex.exec(msg).slice(1);
       r = new RoomHelper();
       if (users.length === 2) {
