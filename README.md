@@ -6,4 +6,4 @@
 
 Caso queira usar/editar o bot dê os créditos para Cafeinado e para Backus, pq kibe é uma merda e todo mundo sabe disso.
 
-Abraço do <a style="color:#FF4500" href="https://github.com/madzomboy" title="dahora" target="_blank">The Notorious Bruce</a> ^_^
+Abraço do <a style="color:#FF4500" href="https://github.com/TNBUP" title="dahora" target="_blank">The Notorious Bruce</a> ^_^
