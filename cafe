@@ -1634,7 +1634,7 @@
               if (disconnectInstances.length === 1) {
                 resp += '. ';
               } else {
-                resp += 'es';
+                resp += 'es. ';
               }
               recentDisconnect = disconnectInstances.pop();
               dcHour = recentDisconnect.time.getHours();
