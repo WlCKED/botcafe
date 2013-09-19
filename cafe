@@ -1216,7 +1216,7 @@
 
     return staffCommand;
 	
- })(Command);
+  })(Command);
 
   lockskipCommand = (function(_super) {
     __extends(lockskipCommand, _super);
@@ -1232,12 +1232,9 @@
       return this.rankPrivelege = 'bouncer';
     };
 
-    lockskipCommand.prototype.functionality = function() 
-	{
-      return data.lockBooth(function();
-    {
-        return setTimeout(function() {}, API.moderateForceSkip(), setTimeout(function() 
-		{
+    lockskipCommand.prototype.functionality = function() {
+      return data.lockBooth(function() {
+        return setTimeout(function() {}, API.moderateForceSkip(), setTimeout(function() {
           return data.unlockBooth();
         }, 5000), 5000);
       });
@@ -1245,7 +1242,7 @@
 
     return lockskipCommand;
 		 
- })(Command);
+	 })(Command);
 
   addCommand = (function(_super) {
     __extends(addCommand, _super);
