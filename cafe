@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = 'https://raw.github.com/SIqueManda/botcafe/master/cafe';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/WlCKED/botcafe/edit/master/cafe';
 
     settings.prototype.afkTime = 30 * 60 * 1000;
 
@@ -73,7 +73,7 @@
       },{
         interval: 9,
         offset: 0,
-        msg: "/em: Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/EDTplugdj/"
+        msg: "/em: Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/EDTentertainment/"
       }
     ];
 
@@ -349,7 +349,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("/me: EDT versão cafeina 100%. ON!");
+    return API.sendChat("/me ON!");
   };
 
   populateUserData = function() {
@@ -892,7 +892,7 @@
     downloadCommand.prototype.functionality = function() {
       var msg;
       msg = "  Participe do grupo e curta nossa pagina ";
-      msg += "https://www.facebook.com/groups/EDTplugdj/ ";
+      msg += "https://www.facebook.com/groups/EDTentertainment/ ";
       msg += "https://www.facebook.com/EDTentertainment ";
       return API.sendChat(msg);
     };
